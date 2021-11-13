@@ -56,6 +56,7 @@ if (num < 4){
  console.log('ERROR! Mínimo: 4; Máximo: 10')
 } else if (4 < num < 10){
   generateRandom(Number(num))
+  // largo de contraseña
 }
 
 
@@ -64,4 +65,3 @@ if (num < 4){
 
 
 
-// largo de contraseña
