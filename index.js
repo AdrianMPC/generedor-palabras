@@ -13,7 +13,7 @@ function generateRandom(len)
   let base = prompt('Base: ');
   // carácteres
   if (base === "decimal"){
-     let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789'
+     let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
@@ -21,21 +21,21 @@ function generateRandom(len)
   
   // lo imprime a la consola
   } else if (base === "binario") {
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01'
+      let wordChars = 'abcdefghijklmnopqrstuvwxyz01' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
     }
   
   } else if (base === "octagonal"){
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01234567'
+      let wordChars = 'abcdefghijklmnopqrstuvwxyz01234567' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
     }
     
   } else if (base === "sexagesimal"){
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEF'
+      let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEF' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
@@ -43,6 +43,7 @@ function generateRandom(len)
   } else if (base !== "decimal"||"binario"||"octagonal"||"sexagesimal"){
     console.log('Porfavor escribe: decimal, binario, octagonal o sexagesimal')
     randomPass = 'INVALIDO'
+    // desactiva el programa si la base es invalida
   }
   //imprime resultado
   console.log('Tu contraseña es: ' + randomPass)
