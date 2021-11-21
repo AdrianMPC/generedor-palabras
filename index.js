@@ -27,7 +27,7 @@ function generateRandom(len)
       // atchar() en combinación con Math, agregando un indice aleatorio
     }
   
-  } else if (base === "octagonal"){
+  } else if (base === "octal"){
       let wordChars = 'abcdefghijklmnopqrstuvwxyz01234567' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
@@ -40,8 +40,8 @@ function generateRandom(len)
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
     }  
-  } else if (base !== "decimal"||"binario"||"octagonal"||"sexagesimal"){
-    console.log('Porfavor escribe: decimal, binario, octagonal o sexagesimal')
+  } else if (base !== "decimal"||"binario"||"octal"||"sexagesimal"){
+    console.log('Porfavor escribe: decimal, binario, octal o sexagesimal')
     randomPass = 'INVALIDO'
     // desactiva el programa si la base es invalida
   }
