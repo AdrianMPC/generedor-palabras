@@ -4,4 +4,5 @@ El generador soporta usar números de diferentes bases usando: "decimal" "binari
 Soporta el un largo de 4 a 10 caracteres
 
 Esfuerzo colectivo del grupo
+
 Archivo principal: INDEX.JS
