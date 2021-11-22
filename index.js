@@ -11,39 +11,39 @@ function genRandomPass(lenght, pass, caracters) {
 }
 
 
-// Funcion que genera la contraseña
+// Función que genera la contraseña
 function generateRandom(len) {
-  // Checquea si es numero o no
+  // Check si es numero o no
   if (isNaN(len)) {
     return '!ERROR! ¡Usa números!';
   }
 
   // variable vacía para guardar la palabra
   let randomPass = '';
-  alert('Las bases soportadas por el programa son:\nDecimal\nBinario\nOctagonal\nSexagesimal')
+  alert('Las bases soportadas por el programa son:\nDecimal\nBinario\nOctal\nSexagesimal')
   let base = prompt('Base: ');
   base = base.toLowerCase()
 
   // Selección de caracteres
   switch (base) {
     case "decimal":
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789' //conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "binario":
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01'
       genRandomPass(len, randomPass, wordChars);
       break;
-    case "octagonal":
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01234567'
+    case "octal":
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01234567'
       genRandomPass(len, randomPass, wordChars);
       break;
     case "sexagesimal":
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEF'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789ABCDEF'
       genRandomPass(len, randomPass, wordChars);
       break;
     default:
-      console.log('Porfavor escriba: Decimal, Binario, Octagonal o Sexagesimal')
+      console.log('Porfavor escriba: Decimal, Binario, Octal o Sexagesimal')
       randomPass = 'INVALIDO'
       break;
   }
@@ -76,9 +76,6 @@ if (num < 4) {
   generateRandom(Number(num))
   // largo de contraseña
 }
-
-
-
 
 
 
