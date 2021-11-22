@@ -20,26 +20,27 @@ function generateRandom(len) {
 
   // variable vacía para guardar la palabra
   let randomPass = '';
-  alert('Las bases soportadas por el programa son:\nDecimal\nBinario\nOctal\nSexagesimal')
+  alert('Las bases soportadas por el programa son:\n------------------\nDecimal\nBinario\nOctal\nSexagesimal\n------------------')
   let base = prompt('Base: ');
   base = base.toLowerCase()
-
+  let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+  
   // Selección de caracteres
   switch (base) {
     case "decimal":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789' //conjunto y base
+      wordChars += '01234567890123456789' //conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "binario":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01' //conjunto y base
+      wordChars += '0101010101' //conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "octal":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01234567'//conjunto y base
+      wordChars += '0123456701234567'//conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "sexagesimal":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789ABCDEF'//conjunto y base
+      wordChars += '0123456789ABCDEF0123456789ABCDEF'//conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     default:
