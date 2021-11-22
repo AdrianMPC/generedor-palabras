@@ -13,7 +13,7 @@ function generateRandom(len)
   let base = prompt('Base: ');
   // carácteres
   if (base === "decimal"){
-     let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789' //conjunto y base
+     let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
@@ -21,21 +21,21 @@ function generateRandom(len)
   
   // lo imprime a la consola
   } else if (base === "binario") {
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01' //conjunto y base
+      let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
     }
   
   } else if (base === "octal"){
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz01234567' //conjunto y base
+      let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01234567' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
     }
     
   } else if (base === "sexagesimal"){
-      let wordChars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEF' //conjunto y base
+      let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789ABCDEF' //conjunto y base
     for(let i = 0; i < len; i++) {
       randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length)); 
       // atchar() en combinación con Math, agregando un indice aleatorio
