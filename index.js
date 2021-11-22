@@ -31,15 +31,15 @@ function generateRandom(len) {
       genRandomPass(len, randomPass, wordChars);
       break;
     case "binario":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01' //conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "octal":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01234567'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz01234567'//conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     case "sexagesimal":
-      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789ABCDEF'
+      wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789ABCDEF'//conjunto y base
       genRandomPass(len, randomPass, wordChars);
       break;
     default:
