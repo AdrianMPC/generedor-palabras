@@ -23,7 +23,7 @@ function generateRandom(len) {
   alert('Las bases soportadas por el programa son:\n------------------\nDecimal\nBinario\nOctal\nSexagesimal\n------------------')
   let base = prompt('Base: ');
   base = base.toLowerCase()
-  let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+  let wordChars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz' //conjunto y base
   
   // Selección de caracteres
   switch (base) {
@@ -45,7 +45,7 @@ function generateRandom(len) {
       break;
     default:
       console.log('Porfavor escriba: Decimal, Binario, Octal o Sexagesimal')
-      randomPass = 'INVALIDO'
+      randomPass = 'INVALIDO'  // destruye el programa si base no es válida
       break;
   }
 
@@ -77,7 +77,3 @@ if (num < 4) {
   generateRandom(Number(num))
   // largo de contraseña
 }
-
-
-
-
