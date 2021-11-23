@@ -70,10 +70,10 @@ function generateRandom(len) {
 //input y limite de num
 const num = prompt('Largo de la contraseña: ');
 if (num < 4) {
-  console.log('ERROR! Mínimo: 4; Máximo: 10')
-} else if (num > 10) {
-  console.log('ERROR! Mínimo: 4; Máximo: 10')
-} else if (4 < num < 10) {
+  console.log('ERROR! Mínimo: 4; Máximo: 30')
+} else if (num > 30) {
+  console.log('ERROR! Mínimo: 4; Máximo: 30')
+} else if (4 < num < 30) {
   generateRandom(Number(num))
   // largo de contraseña
 }
